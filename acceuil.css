@@ -1,0 +1,69 @@
+
+.content { display: inline-flex;
+          gap: 50px;}
+  
+.image{ display: block;
+        width: 100%;
+        height: 400px;
+        float: inline-start;}
+    
+.container { position: relative;}
+    
+.overlay { position: absolute;
+           bottom: 30%;
+           left: 0;
+           right: 0;
+           background-color:transparent;
+           overflow: hidden;
+           width: 100%;
+           height:10%;
+          -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+          transform: scale(0);
+         -webkit-transition: .3s ease;
+          transition: .3s ease; }
+
+.container:hover .overlay {height: 500px;
+                           -webkit-transform: scale(1);
+                           -ms-transform: scale(1);
+                          transform: scale(1);}
+.text { color: white;
+        font-family: cursive;
+        font-size: 50px;
+        font-weight: bold;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         text-align: center; }
+
+.logo { width: 70px;
+        height: 70px;}
+
+.right { padding: auto;
+     margin-right: auto;
+     justify-content: space-around;}
+
+.paragraph {font-size: 130%; 
+            font-family: 'Courier New', Courier, monospace; 
+            padding: 100px;
+            background-image:url('port.jpg');}
+
+.plz{
+    margin: 30px;
+    font-size: 15px; color: black;  }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: transparent;
+        color:black;
+        text-align: center;
+        font-family: cursive;
+        font-size: 20px;}
+   
+
